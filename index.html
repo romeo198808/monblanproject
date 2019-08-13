@@ -4,36 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Monblanproject is site for uploading photos">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Monblanproject</title>
     <script src="js/jquery.min_3.4.1.js"></script>
     <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
     <script type="text/javascript">
       $(function() {
-        $('#form__date--from').datepicker();
-        $('#form__date--before').datepicker();
+        $('#form-date--from').datepicker({ dateFormat: 'dd_mm_yy'});
+        $('#form-date--before').datepicker({ dateFormat: 'dd_mm_yy'});
       });
     </script>
   </head>
   <body>
     <header class="page-header">
-      <img src="" class="page-header__logo" alt="Logo">
-      <p class="page-header__title">Monblanproject</p>
-      <p class="page-header__start">Start on 17-02-2016</p>
-      <ul class="page-header__list">
-        <li class="page-header__item"><b>870</b> posts</li>
-        <li class="page-header__item"><b>11,787</b> followers</li>
-        <li class="page-header__item"><b>112</b> following</li>
-      </ul>
-      <form class="form__date" action="index.html" method="post">
-        <p>
-          <label class="form__title">Date</label>
-          <input value="" placeholder="from" id="form__date--from">
-          <input value="" placeholder="09_06_2016" id="form__date--before">
-        </p>
-      </form>
+      <img src="img/logo.png" class="page-header__logo" alt="Logo">
+      <div class="page-header__wrap">
+        <p class="page-header__title">Monblanproject</p>
+        <p class="page-header__start">Start on 17-02-2016</p>
+        <ul class="page-header__list">
+          <li class="page-header__item"><b>870</b> posts</li>
+          <li class="page-header__item"><b>11,787</b> followers</li>
+          <li class="page-header__item"><b>112</b> following</li>
+        </ul>
+        <form class="form-date" action="index.html" method="post">
+          <p class="form-date__title">Date</p>
+          <label class="form-date__wrap" for="form-date--from">
+            <input class="form-date__input" value="" placeholder="from" id="form-date--from">
+            <button type="button" class="button__close"></button>
+          </label>
+          <label class="form-date__wrap" for="form-date--before">
+            <input class="form-date__input" value="" placeholder="09_06_2016" id="form-date--before">
+            <button type="button" class="button__close"></button>
+          </label>
+        </form>
+      </div>
     </header>
 
     <main class="page-main">
@@ -42,162 +47,191 @@
         <h2 class="visually-hidden">Photogallery</h2>
         <ul class="photogallery__list">
           <li class="photogallery__item">
-            <img src="" alt="photo">
+            <img class="photogallery__img" src="img/photo-1.jpg" alt="photo">
+            <div class="photogallery__mask"></div>
             <div class="photogallery__box">
-              <p class="box__wrap">
-                <time class="box__date">Today</time>
-                <span class="box__like">128</span>
-                <span class="box__message">31</span>
-              </p>
-              <p class="box__wrap">
-                <time class="box__date">9-08-2016</time>
-                <span class="box__like">67</span>
-                <span class="box__message">22</span>
-              </p>
+              <table class="box__table">
+                <tr>
+                  <td class="box__date">Today</td>
+                  <td class="box__like">128</td>
+                  <td class="box__message">31</td>
+                </tr>
+                <tr>
+                  <td class="box__date">9-08-2016</td>
+                  <td class="box__like">67</td>
+                  <td class="box__message">22</td>
+                </tr>
+              </table>
               <p class="box__wrap__upload">
                 Image upload: <time>11-04-2016</time>
               </p>
             </div>
           </li>
           <li class="photogallery__item">
-            <img src="" alt="photo">
+            <img class="photogallery__img" src="img/photo-2.jpg" alt="photo">
+            <div class="photogallery__mask"></div>
             <div class="photogallery__box">
-              <p class="box__wrap">
-                <time class="box__date">Today</time>
-                <span class="box__like">12,800</span>
-                <span class="box__message">3,100</span>
-              </p>
-              <p class="box__wrap">
-                <time class="box__date">9-08-2016</time>
-                <span class="box__like">67</span>
-                <span class="box__message">22</span>
-              </p>
+              <table class="box__table">
+                <tr>
+                  <td class="box__date">Today</td>
+                  <td class="box__like">12,800</td>
+                  <td class="box__message">3,100</td>
+                </tr>
+                <tr>
+                  <td class="box__date">9-08-2016</td>
+                  <td class="box__like">67</td>
+                  <td class="box__message">22</td>
+                </tr>
+              </table>
               <p class="box__wrap__upload">
                 Image upload: <time>11-04-2016</time>
               </p>
             </div>
           </li>
           <li class="photogallery__item photogallery__item--video">
-            <img src="" alt="photo">
+            <img class="photogallery__img" src="img/photo-3.jpg" alt="photo">
+            <div class="photogallery__mask"></div>
+            <div class="photogallery__video"></div>
             <div class="photogallery__box">
-              <p class="box__wrap">
-                <time class="box__date">Today</time>
-                <span class="box__like">128</span>
-                <span class="box__message">31</span>
-              </p>
-              <p class="box__wrap">
-                <time class="box__date">9-08-2016</time>
-                <span class="box__like">67</span>
-                <span class="box__message">22</span>
-              </p>
+              <table class="box__table">
+                <tr>
+                  <td class="box__date">Today</td>
+                  <td class="box__like">128</td>
+                  <td class="box__message">31</td>
+                </tr>
+                <tr>
+                  <td class="box__date">9-08-2016</td>
+                  <td class="box__like">67</td>
+                  <td class="box__message">22</td>
+                </tr>
+              </table>
               <p class="box__wrap__upload">
                 Image upload: <time>11-04-2016</time>
               </p>
             </div>
           </li>
           <li class="photogallery__item">
-            <img src="" alt="photo">
+            <img class="photogallery__img" src="img/photo-4.jpg" alt="photo">
+            <div class="photogallery__mask"></div>
             <div class="photogallery__box">
-              <p class="box__wrap">
-                <time class="box__date">Today</time>
-                <span class="box__like">12,800</span>
-                <span class="box__message">3,100</span>
-              </p>
-              <p class="box__wrap box__wrap--middle">
-                <time class="box__date">9-08-2016</time>
-                <span class="box__like">67</span>
-                <span class="box__message">22</span>
-              </p>
+              <table class="box__table box__table--center">
+                <tr>
+                  <td class="box__date">Today</td>
+                  <td class="box__like">128</td>
+                  <td class="box__message">31</td>
+                </tr>
+                <tr>
+                  <td class="box__date">9-08-2016</td>
+                  <td class="box__like">67</td>
+                  <td class="box__message">22</td>
+                </tr>
+              </table>
               <p class="box__wrap__upload">
                 Image upload: <time>11-04-2016</time>
               </p>
             </div>
           </li>
           <li class="photogallery__item photogallery__item--video">
-            <img src="" alt="photo">
+            <img class="photogallery__img" src="img/photo-5.jpg" alt="photo">
+            <div class="photogallery__mask"></div>
+            <div class="photogallery__video"></div>
             <div class="photogallery__box">
-              <p class="box__wrap">
-                <time class="box__date">Today</time>
-                <span class="box__like">12,800</span>
-                <span class="box__message">3,100</span>
-              </p>
-              <p class="box__wrap box__wrap--middle">
-                <time class="box__date">9-08-2016</time>
-                <span class="box__like">67</span>
-                <span class="box__message">22</span>
-              </p>
+              <table class="box__table box__table--center">
+                <tr>
+                  <td class="box__date">Today</td>
+                  <td class="box__like">128</td>
+                  <td class="box__message">31</td>
+                </tr>
+                <tr>
+                  <td class="box__date">9-08-2016</td>
+                  <td class="box__like">67</td>
+                  <td class="box__message">22</td>
+                </tr>
+              </table>
               <p class="box__wrap__upload">
                 Image upload: <time>11-04-2016</time>
               </p>
             </div>
           </li>
           <li class="photogallery__item">
-            <img src="" alt="photo">
+            <img class="photogallery__img" src="img/photo-6.jpg" alt="photo">
+            <div class="photogallery__mask"></div>
             <div class="photogallery__box">
-              <p class="box__wrap">
-                <time class="box__date">Today</time>
-                <span class="box__like">12,800</span>
-                <span class="box__message">3,100</span>
-              </p>
-              <p class="box__wrap box__wrap--middle">
-                <time class="box__date">9-08-2016</time>
-                <span class="box__like">67</span>
-                <span class="box__message">22</span>
-              </p>
+              <table class="box__table box__table--center">
+                <tr>
+                  <td class="box__date">Today</td>
+                  <td class="box__like">128</td>
+                  <td class="box__message">31</td>
+                </tr>
+                <tr>
+                  <td class="box__date">9-08-2016</td>
+                  <td class="box__like">67</td>
+                  <td class="box__message">22</td>
+                </tr>
+              </table>
               <p class="box__wrap__upload">
                 Image upload: <time>11-04-2016</time>
               </p>
             </div>
           </li>
           <li class="photogallery__item">
-            <img src="" alt="photo">
+            <img class="photogallery__img" src="img/photo-7.jpg" alt="photo">
+            <div class="photogallery__mask"></div>
             <div class="photogallery__box">
-              <p class="box__wrap">
-                <time class="box__date">Today</time>
-                <span class="box__like">12,800</span>
-                <span class="box__message">3,100</span>
-              </p>
-              <p class="box__wrap box__wrap--middle">
-                <time class="box__date">9-08-2016</time>
-                <span class="box__like">67</span>
-                <span class="box__message">22</span>
-              </p>
+              <table class="box__table box__table--center">
+                <tr>
+                  <td class="box__date">Today</td>
+                  <td class="box__like">128</td>
+                  <td class="box__message">31</td>
+                </tr>
+                <tr>
+                  <td class="box__date">9-08-2016</td>
+                  <td class="box__like">67</td>
+                  <td class="box__message">22</td>
+                </tr>
+              </table>
               <p class="box__wrap__upload">
                 Image upload: <time>11-04-2016</time>
               </p>
             </div>
           </li>
           <li class="photogallery__item">
-            <img src="" alt="photo">
+            <img class="photogallery__img" src="img/photo-8.jpg" alt="photo">
+            <div class="photogallery__mask"></div>
             <div class="photogallery__box">
-              <p class="box__wrap">
-                <time class="box__date">Today</time>
-                <span class="box__like">12,800</span>
-                <span class="box__message">3,100</span>
-              </p>
-              <p class="box__wrap box__wrap--middle">
-                <time class="box__date">9-08-2016</time>
-                <span class="box__like">67</span>
-                <span class="box__message">22</span>
-              </p>
+              <table class="box__table box__table--center">
+                <tr>
+                  <td class="box__date"></td>
+                  <td class="box__like">128</td>
+                  <td class="box__message">31</td>
+                </tr>
+                <tr>
+                  <td class="box__date">9-08-2016</td>
+                  <td class="box__like">67</td>
+                  <td class="box__message">22</td>
+                </tr>
+              </table>
               <p class="box__wrap__upload">
                 Image upload: <time>11-04-2016</time>
               </p>
             </div>
           </li>
           <li class="photogallery__item">
-            <img src="" alt="photo">
+            <img class="photogallery__img" src="img/photo-9.jpg" alt="photo">
+            <div class="photogallery__mask"></div>
             <div class="photogallery__box">
-              <p class="box__wrap">
-                <time class="box__date">Today</time>
-                <span class="box__like">12,800</span>
-                <span class="box__message">3,100</span>
-              </p>
-              <p class="box__wrap box__wrap--middle">
-                <time class="box__date">9-08-2016</time>
-                <span class="box__like">67</span>
-                <span class="box__message">22</span>
-              </p>
+              <table class="box__table box__table--center">
+                <tr>
+                  <td class="box__date">Today</td>
+                  <td class="box__like">128</td>
+                  <td class="box__message">31</td>
+                </tr>
+                <tr>
+                  <td class="box__date">9-08-2016</td>
+                  <td class="box__like">67</td>
+                  <td class="box__message">22</td>
+                </tr>
+              </table>
               <p class="box__wrap__upload">
                 Image upload: <time>11-04-2016</time>
               </p>
@@ -207,6 +241,8 @@
         <button type="button" class="button__load">Load more</button>
       </section>
     </main>
-
+  <script>
+    var close = document.querySelector('.form-date__wrap::before');
+  </script>
   </body>
 </html>

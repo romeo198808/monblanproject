@@ -1,0 +1,82 @@
+.form-date {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.button__close {
+  position: absolute;
+  top: 1px;
+  right: 32px;
+
+  background-image: url("../img/icon-close.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: #ebebeb;
+  border: none;
+  border-left: 1px solid #cccccc;
+}
+.form-date__wrap {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 1px;
+    right: 1px;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: #ebebeb;
+    border-left: 1px solid #cccccc;
+    border-radius: 0 4px 4px 0;
+    background-image: url("../img/icon-date_range.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.form-date__title {
+  width: 100%;
+  margin: 0;
+
+  line-height: 32px;
+  text-align: center;
+  color: #262626;
+}
+.form-date__input {
+  width: 170px;
+  height: 30px;
+  padding: 0;
+  padding-left: 10px;
+
+  font: inherit;
+
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+@media (min-width: @tablet) {
+  .form-date {
+    flex-wrap: nowrap;
+    width: 440px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .form-date__wrap {
+    margin-top: 0;
+  }
+  #form-date--from {
+    margin-left: 15px;
+  }
+  #form-date--before {
+    margin-left: 25px;
+  }
+}
