@@ -1,0 +1,60 @@
+.box__table {
+  margin-left: 20px;
+
+  font-weight: 500;
+  &--center {
+    margin-bottom: 48px;
+  }
+}
+.box__date {
+  width: 105px;
+  padding: 10px 0;
+}
+.box__like {
+  position: relative;
+
+  width: 75px;
+  padding: 10px 0;
+  padding-left: 27px;
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 10px;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/icon-like.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.box__message {
+  position: relative;
+
+  width: 75px;
+  padding: 10px 0;
+  padding-left: 25px;
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 10px;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/icon-message.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.box__wrap__upload {
+  margin-bottom: 10px;
+  margin-top: 17px;
+
+  text-align: center;
+}
