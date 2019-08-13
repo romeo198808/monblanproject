@@ -1,3 +1,7 @@
 work/css/*.css
 node_modules/
 package-lock.json
+<<<<<<< HEAD
+=======
+build/
+>>>>>>> 00297274454d0f40904f96cb9d1011717653ed8e
