@@ -9,7 +9,7 @@
     <script src="js/jquery.min_3.4.1.js"></script>
     <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
-    <script type="text/javascript">
+    <script >
       $(function() {
         $('#form-date--from').datepicker({ dateFormat: 'dd_mm_yy'});
         $('#form-date--before').datepicker({ dateFormat: 'dd_mm_yy'});
@@ -29,14 +29,18 @@
         </ul>
         <form class="form-date" action="index.html" method="post">
           <p class="form-date__title">Date</p>
-          <label class="form-date__wrap" for="form-date--from">
-            <input class="form-date__input" value="" placeholder="from" id="form-date--from">
+          <p class="form-date__wrap">
+            <label class="form-date__label" for="form-date--from">
+              <input class="form-date__input" value="" placeholder="from" id="form-date--from">
+            </label>
             <button type="button" class="button__close">Close</button>
-          </label>
-          <label class="form-date__wrap" for="form-date--before">
-            <input class="form-date__input" value="" placeholder="09_06_2016" id="form-date--before">
+          </p>
+          <p class="form-date__wrap">
+            <label class="form-date__label" for="form-date--before">
+              <input class="form-date__input" value="" placeholder="09_06_2016" id="form-date--before">
+            </label>
             <button type="button" class="button__close">Close</button>
-          </label>
+          </p>
         </form>
       </div>
     </header>
@@ -63,7 +67,7 @@
                 </tr>
               </table>
               <p class="box__wrap__upload">
-                Image upload: <time>11-04-2016</time>
+                Image upload: <span>11-04-2016</span>
               </p>
             </div>
           </li>
@@ -84,11 +88,11 @@
                 </tr>
               </table>
               <p class="box__wrap__upload">
-                Image upload: <time>11-04-2016</time>
+                Image upload: <span>11-04-2016</span>
               </p>
             </div>
           </li>
-          <li class="photogallery__item photogallery__item--video">
+          <li class="photogallery__item">
             <img class="photogallery__img" src="img/photo-3.jpg" alt="photo">
             <div class="photogallery__mask"></div>
             <div class="photogallery__video"></div>
@@ -106,7 +110,7 @@
                 </tr>
               </table>
               <p class="box__wrap__upload">
-                Image upload: <time>11-04-2016</time>
+                Image upload: <span>11-04-2016</span>
               </p>
             </div>
           </li>
@@ -127,11 +131,11 @@
                 </tr>
               </table>
               <p class="box__wrap__upload">
-                Image upload: <time>11-04-2016</time>
+                Image upload: <span>11-04-2016</span>
               </p>
             </div>
           </li>
-          <li class="photogallery__item photogallery__item--video">
+          <li class="photogallery__item">
             <img class="photogallery__img" src="img/photo-5.jpg" alt="photo">
             <div class="photogallery__mask"></div>
             <div class="photogallery__video"></div>
@@ -149,7 +153,7 @@
                 </tr>
               </table>
               <p class="box__wrap__upload">
-                Image upload: <time>11-04-2016</time>
+                Image upload: <span>11-04-2016</span>
               </p>
             </div>
           </li>
@@ -170,7 +174,7 @@
                 </tr>
               </table>
               <p class="box__wrap__upload">
-                Image upload: <time>11-04-2016</time>
+                Image upload: <span>11-04-2016</span>
               </p>
             </div>
           </li>
@@ -191,7 +195,7 @@
                 </tr>
               </table>
               <p class="box__wrap__upload">
-                Image upload: <time>11-04-2016</time>
+                Image upload: <span>11-04-2016</span>
               </p>
             </div>
           </li>
@@ -212,7 +216,7 @@
                 </tr>
               </table>
               <p class="box__wrap__upload">
-                Image upload: <time>11-04-2016</time>
+                Image upload: <span>11-04-2016</span>
               </p>
             </div>
           </li>
@@ -233,7 +237,7 @@
                 </tr>
               </table>
               <p class="box__wrap__upload">
-                Image upload: <time>11-04-2016</time>
+                Image upload: <span>11-04-2016</span>
               </p>
             </div>
           </li>
